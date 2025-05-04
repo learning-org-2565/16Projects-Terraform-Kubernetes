@@ -41,6 +41,8 @@ Key variable types for this project:
 - region/zone: Where your VM will be deployed
 - machine_type: Size/capacity of your VM
 - instance_name: What to call your VM instance
+
+meaning we add this varaibles directly in the main.tf , but the values we put  to the variables i nthe var.tf
 ```
 
 #### 3. Resource Definition
