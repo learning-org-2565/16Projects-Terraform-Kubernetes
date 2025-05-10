@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: pod-lifecycle
+  labels:
+    app: web
+    tier: frontend 
+spec:
+  containers:
+  - name: lifecycle-container
+    image: busybox
+    command: ['sh', '-c', 'eacho Starting ...; sleep 10; echo "Simulating failure"; exit 1']
+  restartPolicy: OnFailure
